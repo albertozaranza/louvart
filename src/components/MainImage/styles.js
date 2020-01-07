@@ -17,6 +17,11 @@ export const Container = styled.div`
     height: 400px;
     font-size: 24px;
   }
+
+  @media (max-width: 320px) {
+    height: 300px;
+    font-size: 20px;
+  }
 `;
 
 export const Box = styled.div`
@@ -45,6 +50,17 @@ export const Box = styled.div`
 
     h2 {
       font-size: 30px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 20px;
     }
   }
 `;
