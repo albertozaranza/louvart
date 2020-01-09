@@ -2,16 +2,17 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+
+  padding: 40px 20px;
 
   color: #1034a6;
 
-  @media (max-width: 767px) {
-    height: auto;
-
-    padding-bottom: 20px;
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
   }
 `;
 

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import logo from '~/assets/logo-small.svg';
 import menu from '~/assets/menu.svg';
 
-import { Container, VisibleNav } from './styles';
+import { Container, RowNav } from './styles';
 
 export default function Header() {
   const [visible, setVisible] = useState(false);
@@ -15,26 +17,40 @@ export default function Header() {
   return (
     <Container>
       <nav>
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
 
         <button onClick={handleMenu} type="button">
           <img src={menu} alt="logo" />
         </button>
 
         <ul>
-          <li>Início</li>
-          <li>Sobre</li>
-          <li>Serviços</li>
+          <Link to="/">
+            <li>Início</li>
+          </Link>
+          <Link to="/about">
+            <li>Sobre</li>
+          </Link>
+          <Link to="/services">
+            <li>Serviços</li>
+          </Link>
         </ul>
       </nav>
       {visible ? (
-        <VisibleNav>
+        <RowNav>
           <ul>
-            <li>Início</li>
-            <li>Sobre</li>
-            <li>Serviços</li>
+            <Link to="/">
+              <li>Início</li>
+            </Link>
+            <Link to="/about">
+              <li>Sobre</li>
+            </Link>
+            <Link to="/services">
+              <li>Serviços</li>
+            </Link>
           </ul>
-        </VisibleNav>
+        </RowNav>
       ) : (
         <></>
       )}

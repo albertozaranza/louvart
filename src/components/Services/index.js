@@ -12,6 +12,7 @@ import { Container, Info, GridItem } from './styles';
 export default function Services() {
   return (
     <Container>
+      <h1>Conheça algumas de nossas atividades</h1>
       <Grid>
         <GridItem>
           <img src={gate} alt="gate" />

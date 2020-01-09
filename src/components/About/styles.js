@@ -6,14 +6,17 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 30px 0;
+  padding: 20px;
 
   color: #fff;
   background-color: #1034a6;
 `;
 
 export const GridItem = styled.div`
+  text-align: justify;
+
   h1 {
+    font-weight: normal;
     margin-bottom: 10px;
   }
 
@@ -22,5 +25,10 @@ export const GridItem = styled.div`
 
     width: 300px;
     height: 150px;
+
+    @media (max-width: 320px) {
+      width: 250px;
+      height: 125px;
+    }
   }
 `;

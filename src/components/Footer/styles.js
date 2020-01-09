@@ -12,7 +12,7 @@ export const Container = styled.div`
   background-color: #1034a6;
 
   img {
-    height: 100px;
+    height: 80px;
   }
 
   @media (max-width: 480px) {
@@ -25,7 +25,7 @@ export const Container = styled.div`
 export const Info = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   width: 100%;
   max-width: 1200px;
@@ -43,10 +43,16 @@ export const Info = styled.div`
     }
 
     flex-direction: column;
+
+    p {
+      width: auto;
+    }
   }
 `;
 
 export const Passage = styled.div`
+  text-align: justify;
+
   p {
     margin-bottom: 10px;
   }
@@ -58,8 +64,13 @@ export const Passage = styled.div`
 
 export const Contact = styled.div`
   h1 {
+    font-size: 22px;
     font-weight: normal;
-    margin-bottom: 20px;
+
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #fff;
   }
 
   div {
@@ -70,17 +81,18 @@ export const Contact = styled.div`
   }
 
   img {
-    height: 24px;
+    height: 20px;
     margin-right: 10px;
   }
 `;
 
 export const Copyright = styled.div`
+  font-size: 10px;
   text-align: center;
 
   width: 100%;
 
-  padding: 10px;
+  padding: 8px;
 
   background-color: #000080;
 `;

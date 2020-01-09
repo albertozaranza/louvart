@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
 
   height: 500px;
+  margin-top: 100px;
   padding: 0 20px;
 
   font-size: 30px;
@@ -33,12 +34,18 @@ export const Box = styled.div`
   color: #fff;
   background-color: rgba(16, 52, 166, 0.6);
 
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.4);
+
   h1 {
     font-size: 80px;
+    font-weight: normal;
     letter-spacing: 10px;
   }
 
   h2 {
+    font-weight: normal;
     font-size: 40px;
   }
 

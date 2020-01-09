@@ -1,27 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Grid from '~/components/Grid';
+import box from '~/assets/box.jpg';
+import gate from '~/assets/gate.jpg';
+import home from '~/assets/home.jpg';
+import glass from '~/assets/glass.jpg';
 
-import { Container, GridItem } from './styles';
+import { Container, Grid, GridItem } from './styles';
 
 export default function Projects() {
   return (
     <Container>
-      <h1>Últimos projetos</h1>
+      <h1>Nossos trabalhos</h1>
       <Grid>
         <GridItem>
-          <div>Vidro</div>
+          <img src={glass} alt="glass" />
+          <span>Vidro</span>
         </GridItem>
         <GridItem>
-          <div>Box</div>
+          <img src={box} alt="box" />
+          <span>Box</span>
         </GridItem>
         <GridItem>
-          <div>Residência</div>
+          <img src={home} alt="home" />
+          <span>Residência</span>
         </GridItem>
         <GridItem>
-          <div>Portões</div>
+          <img src={gate} alt="gate" />
+          <span>Portões</span>
         </GridItem>
       </Grid>
+      <Link to="/services">
+        <button type="button">Ver mais</button>
+      </Link>
     </Container>
   );
 }
